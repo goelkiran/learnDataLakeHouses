@@ -1,26 +1,28 @@
 # CheatSheet for Snowflake, Databricks, and Oracle Cloud
 
-A comprehensive comparison table between Snowflake, Databricks, and Oracle Cloud Infrastructure (OCI):
+## Introduction
+
+This cheatsheet provides a comprehensive comparison between three major data platforms: Snowflake, Databricks, and Oracle Cloud Infrastructure (OCI). Each platform offers unique features and capabilities tailored for different use cases. Icons are used to indicate open-source technologies and enterprise popularity.
 
 | **Category Group** | **Category**                              | **Snowflake**                           | **Databricks**                         | **Oracle Cloud (OCI)**                 |
 |-------------------|---------------------------------------|------------------------------------|------------------------------------|------------------------------------|
 | **Architecture**  | **Core Platform**                         | Snowflake Data Cloud               | Databricks Lakehouse               | Oracle Cloud Infrastructure        |
-| **Architecture**  | **Storage Format**                        | Micro-partitions                   | Delta Lake                         | Oracle Block Storage / Object Storage |
+| **Architecture**  | **Storage Format**                        | Micro-partitions                   | Delta Lake ![Open Source](https://img.shields.io/badge/Open%20Source-green)                        | Oracle Block Storage / Object Storage |
 | **Architecture**  | **Compute**                               | Virtual Warehouses                 | Clusters                           | Oracle Compute Instances           |
-| **Architecture**  | **Cluster Management**                    | Fully Managed                      | Managed Clusters                   | Oracle Kubernetes Engine           |
-| **Performance**   | **Processing Engine**                     | Snowflake SQL Engine               | Apache Spark + Photon              | Oracle Database SQL Engine         |
+| **Architecture**  | **Cluster Management**                    | Fully Managed                      | Managed Clusters                   | Oracle Kubernetes Engine ![Open Source](https://img.shields.io/badge/Open%20Source-green)          |
+| **Performance**   | **Processing Engine**                     | Snowflake SQL Engine               | Apache Spark + Photon ![Open Source](https://img.shields.io/badge/Open%20Source-green)             | Oracle Database SQL Engine         |
 | **Performance**   | **Execution Engine**                      | Query Optimizer                    | Photon                             | Exadata Smart Scan                 |
 | **Architecture**  | **Control Plane**                         | Snowflake Control Services         | Databricks Control Plane           | Oracle Cloud Console               |
 | **Architecture**  | **Data Plane**                            | Snowflake Storage Layer            | Databricks Execution & Storage Layer | Oracle Autonomous Data Warehouse   |
-| **Architecture**  | **Storage Layer**                         | Proprietary Storage                | Delta Lake                         | Oracle Cloud Object Storage        |
-| **Architecture**  | **Metadata Store**                        | Metadata Store                     | Unity Catalog + Hive Metastore     | Oracle Data Catalog                |
+| **Architecture**  | **Storage Layer**                         | Proprietary Storage                | Delta Lake ![Open Source](https://img.shields.io/badge/Open%20Source-green)                         | Oracle Cloud Object Storage        |
+| **Architecture**  | **Metadata Store**                        | Metadata Store                     | Unity Catalog + Hive Metastore ![Open Source](https://img.shields.io/badge/Open%20Source-green)     | Oracle Data Catalog                |
 | **Performance**   | **Data Warehouse**                        | Snowflake Data Warehouse           | Databricks SQL Warehouse           | Oracle Autonomous Data Warehouse   |
-| **Architecture**  | **Lakehouse**                             | Iceberg Tables / External Tables   | Delta Lake                         | Oracle Big Data Service            |
+| **Architecture**  | **Lakehouse**                             | Iceberg Tables / External Tables ![Open Source](https://img.shields.io/badge/Open%20Source-green)   | Delta Lake ![Open Source](https://img.shields.io/badge/Open%20Source-green)                         | Oracle Big Data Service            |
 | **Performance**   | **Virtual Warehouse**                     | Virtual Warehouse                  | SQL Warehouse                      | Oracle Autonomous Warehouse        |
 | **Performance**   | **Serverless Execution**                  | Snowpark                           | Serverless Compute                 | Oracle Functions                   |
 | **Integrations**  | **Programming Support**                   | Snowpark (Python, Java, Scala)     | Notebooks (Python, Scala, SQL, R)  | PL/SQL, Java, Python, SQL          |
-| **Machine Learning** | **Machine Learning**                      | Snowpark ML (limited)              | Databricks ML (MLflow, AutoML)     | Oracle Machine Learning            |
-| **Integrations**  | **Data Sharing**                          | Secure Data Sharing                | Delta Sharing                      | Oracle Data Safe                   |
+| **Machine Learning** | **Machine Learning**                      | Snowpark ML (limited)              | Databricks ML (MLflow, AutoML) ![Open Source](https://img.shields.io/badge/Open%20Source-green)     | Oracle Machine Learning            |
+| **Integrations**  | **Data Sharing**                          | Secure Data Sharing                | Delta Sharing ![Open Source](https://img.shields.io/badge/Open%20Source-green)                      | Oracle Data Safe                   |
 | **Security**      | **Data Catalog & Governance**             | Data Governance                    | Unity Catalog                      | Oracle Data Catalog                |
 | **Integrations**  | **ETL/ELT Framework**                     | Tasks & Streams                    | Workflows                          | Oracle Data Integrator (ODI)       |
 | **Security**      | **Access Control**                        | RBAC                               | RBAC                               | Oracle IAM                         |
@@ -63,5 +65,3 @@ A comprehensive comparison table between Snowflake, Databricks, and Oracle Cloud
 - **Snowflake**: Use virtual warehouses to isolate workloads and optimize performance. Leverage Snowflake's data sharing capabilities for seamless collaboration.
 - **Databricks**: Utilize Delta Lake for reliable data storage and MLflow for managing machine learning workflows.
 - **Oracle Cloud (OCI)**: Implement Oracle's autonomous services to reduce administrative overhead and enhance security.
-
-This enhanced cheatsheet should provide data engineers with a more comprehensive overview and practical insights into using Snowflake, Databricks, and Oracle Cloud effectively.
