@@ -1,18 +1,3 @@
-<plan>
-    <step>
-        <summary>Expand details in the cheatsheet to make it more exhaustive and comprehensive for data engineers.</summary>
-        <actions>
-            <action>
-                <recipient_name>functions.getfilechanges</recipient_name>
-                <parameters>
-                    <path>cheatsheet.md</path>
-                    <repo>goelkiran/learnDataLakeHouses</repo>
-                </parameters>
-            </action>
-        </actions>
-    </step>
-</plan>To make the cheatsheet more exhaustive, comprehensive, and readable for data engineers, consider adding more detailed explanations, use cases, and best practices. Here's an enhanced version of the cheatsheet with additional details:
-
 # CheatSheet for Snowflake, Databricks, and Oracle Cloud
 
 A comprehensive comparison table between Snowflake, Databricks, and Oracle Cloud Infrastructure (OCI):
