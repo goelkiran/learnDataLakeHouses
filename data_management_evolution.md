@@ -94,13 +94,15 @@ This segregation, known as the OLTP-OLAP model, ensured that transactional syste
 
 ```mermaid
 flowchart LR
-    subgraph OLTP [Online Transaction Processing]
-      OLTP1[Transactional System]
-    end
-    subgraph OLAP [Online Analytical Processing]
-      OLAP1[Data Warehouse]
-    end
-    OLTP1 -->|Data Extraction| OLAP1
+  subgraph OLTP [Online Transaction Processing]
+    direction TB
+    OLTP1[Transactional System]
+  end
+  subgraph OLAP [Online Analytical Processing]
+    direction TB
+    OLAP1[Data Warehouse]
+  end
+  OLTP1 -->|Data Extraction| OLAP1
 ```
 
 ## Technological Advances and the Big Data Revolution
