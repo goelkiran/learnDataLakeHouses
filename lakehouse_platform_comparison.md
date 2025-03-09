@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This cheatsheet provides a comprehensive comparison between five major data platforms: Snowflake, Databricks, Oracle Cloud Infrastructure (OCI), Azure Data Lake House, and AWS. Each platform offers unique features and capabilities tailored for different use cases. Icons are used to indicate open-source technologies (✅) and enterprise popularity (🏢).
+This cheatsheet provides a comprehensive comparison between five major data platforms: Snowflake, Databricks, Oracle Cloud Infrastructure (OCI), Azure Synapse Analytics, and AWS. Each platform offers unique features for various use cases. Icons: ✅ indicates open-source technology; 🏢 denotes strong enterprise adoption.
 
-| **Category Group** | **Category**                              | **Snowflake**                           | **Databricks**                         | **Oracle Cloud (OCI)**                 | **Azure Data Lake House**              | **AWS**                               |
+| **Category Group** | **Category**                              | **Snowflake**                           | **Databricks**                         | **Oracle Cloud (OCI)**                 | **Azure Synapse Analytics**              | **AWS**                               |
 |-------------------|---------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
 | **Architecture**  | **Core Platform**                         | Snowflake Data Cloud               | Databricks Lakehouse 🏢            | Oracle Cloud Infrastructure        | Azure Synapse Analytics              | AWS Lake Formation                    |
 | **Architecture**  | **Storage Format**                        | Micro-partitions                   | Delta Lake ✅                       | Oracle Block Storage / Object Storage | Azure Data Lake Storage Gen2 ✅       | AWS S3 🏢                             |
@@ -35,6 +35,10 @@ This cheatsheet provides a comprehensive comparison between five major data plat
 | **Data Formats**  | **Data Format Support**                   | Parquet, ORC, JSON                 | Parquet, ORC, JSON, Delta ✅        | Parquet, ORC, JSON                 | Parquet, ORC, JSON                   | Parquet, ORC, JSON 🏢                  |
 | **Workflow Orchestration** | **Orchestration**                | Snowflake Tasks & Streams          | Databricks Workflows               | Oracle Data Integrator (ODI)       | Azure Data Factory Pipelines         | AWS Step Functions 🏢                  |
 | **Data Replication** | **Replication**                        | Snowflake Replication              | Databricks Delta Live Tables ✅    | Oracle GoldenGate                  | Azure Data Sync                      | AWS DMS 🏢                             |
+| **Pricing**       | **Pricing Model**                       | Compute & Storage Based            | Compute & Storage Based            | Compute & Storage Based            | Compute & Storage Based            | Compute & Storage Based            |
+| **Use Case**      | **Use Case Suitability**                | Data Warehousing                   | ML & Real-time Analytics           | Enterprise Applications            | Integrated Data Analytics          | Scalable Analytics                   |
+
+For a more in-depth technical comparison, see the [Lakehouse Platform Technical Details](./lakehouse_platform_technical_details.md) document.
 
 ### Detailed Explanations and Best Practices
 
