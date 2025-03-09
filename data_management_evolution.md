@@ -94,16 +94,15 @@ This segregation, known as the OLTP-OLAP model, ensured that transactional syste
 
 ```mermaid
 flowchart LR
-  subgraph OLTP [Online Transaction Processing]
+  subgraph OLTP [Online_Transaction_Processing]
       OLTP1[Transactional System]
   end
 
-  subgraph OLAP [Online Analytical Processing]
+  subgraph OLAP [Online_Analytical_Processing]
     OLAP1[Data Warehouse]
   end
   OLTP1 -->|Data Extraction| OLAP1
-  style OLTP fill:#f9f,stroke:#333,stroke-width:2px;
-  style OLAP fill:#bbf,stroke:#333,stroke-width:2px;
+
   linkStyle default stroke-width:2px;
 ```
 
