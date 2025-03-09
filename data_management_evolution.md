@@ -54,7 +54,7 @@ gantt
     section Storage
     Magnetic       :1970, 1990
     SAN/NAS        :1990, 2005
-    DFS           :2005, 2015
+    Distributed    :2005, 2015
     Cloud         :2015, 2023
     section Network
     Local         :1970, 1990
@@ -64,7 +64,7 @@ gantt
     section Data
     Structured    :1970, 1990
     Historical    :1990, 2005
-    Multi-Struct  :2005, 2015
+    Multi-Structured  :2005, 2015
     Real-time     :2015, 2023
 ```
 
