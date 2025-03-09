@@ -30,35 +30,12 @@ In the early days of data management, several key characters played crucial role
 
 As our story unfolds, each character undergoes significant transformation, influencing and being influenced by the others:
 
-1.  **CPU Evolution**:
-    *   Early Era: Single-core, expensive, limited processing. *Human preprocessing was key due to CPU constraints.*
-    *   Data Warehouse Era: Multi-core processors, specialized OLAP operations. *CPUs began to handle more complex analytical queries.*
-    *   Big Data Era: Distributed processing, parallel computing. *The rise of frameworks like MapReduce leveraged distributed CPUs.*
-    *   Modern Era: Cloud-scale processing, specialized AI/ML processors. *Cloud computing provides virtually limitless CPU resources.*
-
-2.  **RAM Evolution**:
-    *   Early Era: Kilobytes to Megabytes, expensive. *Limited RAM necessitated efficient algorithms and data structures.*
-    *   Data Warehouse Era: Gigabytes, columnar storage. *Larger RAM allowed for in-memory analytics and columnar data formats.*
-    *   Big Data Era: Distributed memory management. *Frameworks like Spark managed memory across distributed clusters.*
-    *   Modern Era: Terabytes, in-memory processing. *In-memory databases and processing frameworks became feasible.*
-
-3.  **Persisted Storage Evolution**:
-    *   Early Era: Magnetic disks, structured files. *Storage was slow and expensive, favoring structured data and normalization.*
-    *   Data Warehouse Era: SAN/NAS, optimized for OLAP. *Storage solutions were optimized for analytical workloads.*
-    *   Big Data Era: Distributed file systems, commodity hardware. *Hadoop and other distributed systems leveraged cheaper commodity storage.*
-    *   Modern Era: SSD, cloud storage, object stores. *Cloud storage offers scalable and cost-effective storage solutions.*
-
-4.  **Network Evolution**:
-    *   Early Era: Local connections, low bandwidth. *Limited network capabilities kept systems tightly coupled.*
-    *   Data Warehouse Era: Enterprise networks, data centers. *Data centers enabled larger-scale data warehousing.*
-    *   Big Data Era: Distributed systems, rack awareness. *Networks became critical for distributed processing frameworks.*
-    *   Modern Era: Cloud interconnects, global networks. *Cloud networks provide high-bandwidth, low-latency connections globally.*
-
-5.  **Data Evolution**:
-    *   Early Era: Structured, manually entered. *Data was carefully curated and structured due to limitations in storage and processing.*
-    *   Data Warehouse Era: Historical, aggregated. *Data warehouses focused on historical and aggregated data for BI.*
-    *   Big Data Era: Multi-structured, machine-generated. *The volume and variety of data exploded with the rise of the internet and sensors.*
-    *   Modern Era: Real-time, streaming, AI-generated. *Data is now generated in real-time and often used for AI/ML applications.*
+| **Era** | **CPU Evolution** | **RAM Evolution** | **Persisted Storage Evolution** | **Network Evolution** | **Data Evolution** |
+|---------|-------------------|-------------------|-------------------------------|----------------------|--------------------|
+| **Early Era** | Single-core, expensive, limited processing. *Human preprocessing was key due to CPU constraints.* | Kilobytes to Megabytes, expensive. *Limited RAM necessitated efficient algorithms and data structures.* | Magnetic disks, structured files. *Storage was slow and expensive, favoring structured data and normalization.* | Local connections, low bandwidth. *Limited network capabilities kept systems tightly coupled.* | Structured, manually entered. *Data was carefully curated and structured due to limitations in storage and processing.* |
+| **Data Warehouse Era** | Multi-core processors, specialized OLAP operations. *CPUs began to handle more complex analytical queries.* | Gigabytes, columnar storage. *Larger RAM allowed for in-memory analytics and columnar data formats.* | SAN/NAS, optimized for OLAP. *Storage solutions were optimized for analytical workloads.* | Enterprise networks, data centers. *Data centers enabled larger-scale data warehousing.* | Historical, aggregated. *Data warehouses focused on historical and aggregated data for BI.* |
+| **Big Data Era** | Distributed processing, parallel computing. *The rise of frameworks like MapReduce leveraged distributed CPUs.* | Distributed memory management. *Frameworks like Spark managed memory across distributed clusters.* | Distributed file systems, commodity hardware. *Hadoop and other distributed systems leveraged cheaper commodity storage.* | Distributed systems, rack awareness. *Networks became critical for distributed processing frameworks.* | Multi-structured, machine-generated. *The volume and variety of data exploded with the rise of the internet and sensors.* |
+| **Modern Era** | Cloud-scale processing, specialized AI/ML processors. *Cloud computing provides virtually limitless CPU resources.* | Terabytes, in-memory processing. *In-memory databases and processing frameworks became feasible.* | SSD, cloud storage, object stores. *Cloud storage offers scalable and cost-effective storage solutions.* | Cloud interconnects, global networks. *Cloud networks provide high-bandwidth, low-latency connections globally.* | Real-time, streaming, AI-generated. *Data is now generated in real-time and often used for AI/ML applications.* |
 
 ```mermaid
 gantt
