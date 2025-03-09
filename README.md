@@ -9,6 +9,7 @@ This repository contains a collection of resources for understanding the evoluti
 *   [lakehouse_platform_comparison.md](./lakehouse_platform_comparison.md): A high-level comparison of popular data lakehouse platforms, including Snowflake, Databricks, Oracle Cloud Infrastructure (OCI), Azure Synapse Analytics, and AWS.
 *   [lakehouse_platform_technical_details.md](./lakehouse_platform_technical_details.md): A technical deep dive into the architecture, performance, governance, and security features of various data lakehouse platforms.
 *   [data_management_monologue.md](./data_management_monologue.md): An audio monologue script that provides a comprehensive overview of the evolution of data management systems.
+*   [lakehouse_table_formats_comparison.md](./lakehouse_table_formats_comparison.md): A comparison of Apache Iceberg, Delta Tables, and Apache Hudi, along with the concept of Xtables for portability.
 
 ## Purpose
 
@@ -34,6 +35,9 @@ This document provides a technical deep dive into the platforms compared in the 
 
 ### data_management_monologue.md
 This audio monologue script offers a comprehensive overview of the evolution of data management systems, designed to be engaging and informative for data engineers and architects. It covers the key technological advancements and challenges that have shaped the current data lakehouse architecture.
+
+### lakehouse_table_formats_comparison.md
+This document provides a detailed technical comparison of open table formats (Apache Iceberg, Delta Lake, and Apache Hudi) used in data lakehouses. It includes feature matrices, performance considerations, integration capabilities, implementation examples, and the emerging Xtables framework for cross-platform compatibility.
 
 ## Conclusion
 
